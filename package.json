@@ -1,0 +1,44 @@
+{
+  "name": "polo-schema",
+  "version": "1.0.0",
+  "description": "Library is a schema builder for defining the structure of a Polo document",
+  "type": "module",
+  "exports": {
+    "require": {
+      "default": "./dist/cjs/module.js",
+      "types": "./dist/cjs/module.d.ts",
+      "require": "./dist/cjs/module.js",
+      "node": "./dist/cjs/module.js"
+    },
+    "import": {
+      "default": "./dist/esm/module.js",
+      "types": "./dist/esm/module.d.ts",
+      "import": "./dist/esm/module.js",
+      "node": "./dist/esm/module.js"
+    }
+  },
+  "keywords": [
+    "js-polo",
+    "polo",
+    "moi-protocol",
+    "moi",
+    "schema",
+    "polo-schema"
+  ],
+  "author": {
+    "name": "Harsh Rastogi",
+    "email": "rastogiharsh04@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/0xharshrastogi/polo-schema.git"
+  },
+  "license": "ISC",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "./build.sh esm & ./build.sh cjs"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2"
+  }
+}
