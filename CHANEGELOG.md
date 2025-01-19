@@ -1,6 +1,6 @@
 # Changelog
 
-## v1.0.2
+## v1.0.3
 
 - Fixed package.json `main` and `module` fields
 - Include `src` in the package
