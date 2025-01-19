@@ -1,22 +1,10 @@
 {
   "name": "polo-schema",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "Library is a schema builder for defining the structure of a Polo document",
   "type": "module",
-  "exports": {
-    "require": {
-      "default": "./dist/cjs/module.js",
-      "types": "./dist/cjs/module.d.ts",
-      "require": "./dist/cjs/module.js",
-      "node": "./dist/cjs/module.js"
-    },
-    "import": {
-      "default": "./dist/esm/module.js",
-      "types": "./dist/esm/module.d.ts",
-      "import": "./dist/esm/module.js",
-      "node": "./dist/esm/module.js"
-    }
-  },
+  "main": "./dist/cjs/module.js",
+  "module": "./dist/esm/module.js",
   "keywords": [
     "js-polo",
     "polo",
@@ -36,7 +24,9 @@
   "license": "ISC",
   "scripts": {
     "clean": "rm -rf dist",
-    "build": "./build.sh esm & ./build.sh cjs"
+    "build": "./build.sh esm & ./build.sh cjs",
+    "pack": "npm pack",
+    "publish": "npm publish"
   },
   "devDependencies": {
     "typescript": "^5.7.2"

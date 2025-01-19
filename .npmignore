@@ -2,7 +2,6 @@
 /.npmignore
 /tsconfig.json
 /tsconfig.*.json
-src/
 *.tgz
 build.sh
 CHANGELOG.md
