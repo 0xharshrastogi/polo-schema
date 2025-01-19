@@ -1,6 +1,6 @@
 {
   "name": "polo-schema",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library is a schema builder for defining the structure of a Polo document",
   "type": "module",
   "exports": {

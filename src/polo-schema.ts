@@ -1,7 +1,7 @@
 type PrimitivePoloTypes =
   | "string"
   | "integer"
-  | "boolean"
+  | "bool"
   | "null"
   | "bytes"
   | "float"
@@ -53,8 +53,8 @@ class PoloSchemaBuilder {
     return { kind };
   }
 
-  get boolean(): PrimitiveSchema<"boolean"> {
-    return this.primitive("boolean");
+  get boolean(): PrimitiveSchema<"bool"> {
+    return this.primitive("bool");
   }
 
   get integer(): PrimitiveSchema<"integer"> {
